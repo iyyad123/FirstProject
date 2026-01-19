@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snack Al Yaqout - Fresh & Delicious Snacks Every Day. Local fast-food restaurant serving quality snacks and meals.">
+    <title>Snack Al Yaqout - Fresh & Delicious Snacks</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-circle">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h2>Snack Al Yaqout</h2>
+                <p class="tagline">ARAYES FUSION</p>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <span>About</span>
+                </a>
+                <a href="#menu" class="nav-link" data-section="menu">
+                    <span>Menu</span>
+                </a>
+                <a href="#gallery" class="nav-link" data-section="gallery">
+                    <span>Gallery</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <span>Get In Touch</span>
+                </a>
+            </nav>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="mailto:contact@snackalyaqout.com" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+1234567890" class="social-icon" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Snack Al Yaqout</h1>
+                    <p class="hero-subtitle">Savor Fresh & Delicious Snacks Every Day</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">
+                            <i class="fas fa-shopping-bag"></i> Order Now
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-map-marker-alt"></i> Visit Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative Food Icons -->
+            <div class="floating-icons">
+                <i class="fas fa-hamburger icon-1"></i>
+                <i class="fas fa-pizza-slice icon-2"></i>
+                <i class="fas fa-drumstick-bite icon-3"></i>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">About Snack Al Yaqout</h2>
+                <div class="title-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Snack Al Yaqout specializes in serving <span class="highlight">mouth-watering snacks</span> to food lovers everywhere.</h3>
+                    <p>Combining authentic flavors and top-quality ingredients, we aim to provide a delightful culinary experience with every bite. Our passion for food and dedication to customer satisfaction ensure that each visit leaves you eagerly awaiting your next.</p>
+                    <p>Come taste the <strong>best snacks in town</strong> and experience the hospitality and charm that make <strong>Snack Al Yaqout unique.</strong></p>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> GET IN TOUCH
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="section-header">
+                <h2 class="section-title">Menu</h2>
+                <div class="title-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="main">Main Menu</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+                <button class="category-btn" data-category="combos">Combos</button>
+            </div>
+            
+            <!-- Menu Items Grid -->
+            <div class="menu-grid">
+                <!-- Main Menu Items -->
+                <div class="menu-card" data-category="main">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-burger"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Arayes Beef</h3>
+                        <p>Grilled pita stuffed with seasoned beef, herbs, and spices</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$14.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="main">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Arayes Chicken</h3>
+                        <p>Tender chicken arayes with special sauce and fresh vegetables</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$13.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="main">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Arayes Cheese</h3>
+                        <p>Melted cheese blend in crispy grilled pita bread</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$11.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="main">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Spicy Arayes</h3>
+                        <p>Hot and spicy arayes with jalapeños and special sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$15.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sides -->
+                <div class="menu-card" data-category="sides">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-french-fries"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>French Fries</h3>
+                        <p>Crispy golden fries with special seasoning</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$4.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="sides">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Fresh Salad</h3>
+                        <p>Mixed greens with house dressing</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$6.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverages -->
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-glass-water"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Fresh Lemonade</h3>
+                        <p>Freshly squeezed lemonade with mint</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$3.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Arabic Coffee</h3>
+                        <p>Traditional Arabic coffee with cardamom</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$2.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Combos -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-box"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Family Combo</h3>
+                        <p>4 Arayes + Fries + 4 Drinks</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$49.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-card-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Meal Deal</h3>
+                        <p>2 Arayes + Fries + 2 Drinks</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$27.95</span>
+                            <button class="btn-add-cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <div class="title-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Delicious Arayes</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Fresh Ingredients</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Our Kitchen</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Special Events</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Food Preparation</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Your Name
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Your Email
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Address</h4>
+                        <p>123 Food Street<br>City Center, State 12345</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Contact Info</h4>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><a href="mailto:contact@snackalyaqout.com">contact@snackalyaqout.com</a></p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Opening Hours</h4>
+                        <p>Mon - Fri: 08:00 - 22:00<br>Sat - Sun: 10:00 - 23:00</p>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Map Location</p>
+                        <button class="btn btn-outline btn-sm" onclick="window.open('https://maps.google.com', '_blank')">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Snack Al Yaqout</h3>
+                    <p>Fresh & Delicious Snacks Every Day</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> contact@snackalyaqout.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Snack Al Yaqout. All rights reserved. | Designed with <i class="fas fa-heart"></i></p>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890?text=Hello!%20I%20would%20like%20to%20order%20from%20Snack%20Al%20Yaqout" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
